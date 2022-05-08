@@ -13,7 +13,7 @@ const useGetList = () => {
   const getList = async () => {
     dispatch({ type: LOADING_STARTS });
     try {
-      const response = await axios.get(`${'https://share-point-tt.herokuapp.com/api/loginDetails'}`);
+      const response = await axios.get(`${'https://share-point-tt.herokuapp.com/api/loginDetails?role=3'}`);
       if (response.data) {
         console.log(response.data.data);
         toast.info('Success');
