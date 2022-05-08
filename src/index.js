@@ -8,14 +8,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import ReyesJennifer from './ReyesJennifer';
+import Result from './Result';
 
 const rootElement = document.getElementById('root');
 render(
   <BrowserRouter>
     <Routes>
     <Route path="/web" element={<App />} />
-      <Route path="/web/snowx" element={<ReyesJennifer />} />
+      <Route path="/web/snowx" element={<Result />} />
     </Routes>
   </BrowserRouter>,
   rootElement

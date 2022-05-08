@@ -5,7 +5,7 @@ import moment from 'moment';
 import useGetList from './api/useGetList';
 
 
-const  ReyesJenniferTable = ({  data, isLoading }) => {
+const  ResultTable = ({  data, isLoading }) => {
 
   const { deleteList } = useGetList();
 
@@ -87,9 +87,9 @@ const  ReyesJenniferTable = ({  data, isLoading }) => {
   );
 };
 
- ReyesJenniferTable.propTypes = {
+ ResultTable.propTypes = {
    data: PropTypes.arrayOf.isRequired,
   isLoading: PropTypes.bool.isRequired,
 };
 
-export default  ReyesJenniferTable;
+export default  ResultTable;

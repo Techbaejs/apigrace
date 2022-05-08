@@ -2,9 +2,9 @@
 /* eslint-disable jsx-a11y/label-has-for */
 import React, { useEffect } from 'react';
 import useGetList from './api/useGetList';
-import ReyesJenniferTable from './ReyesJenniferTable';
+import ResultTable from './ResultTable';
 
-const ReyesJennifer = () => {
+const Result = () => {
   const { getList, data, isLoading } = useGetList();
   
 
@@ -30,11 +30,11 @@ const ReyesJennifer = () => {
           />
         </div> */}
         <div className="row">
-          <ReyesJenniferTable  data={ data} isLoading={isLoading} />
+          <ResultTable  data={ data} isLoading={isLoading} />
         </div>
       </div>
     </div>
   );
 };
 
-export default ReyesJennifer;
+export default Result;
